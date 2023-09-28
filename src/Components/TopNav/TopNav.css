@@ -1,0 +1,160 @@
+li {
+    list-style: none;
+    padding: 10px;
+}
+
+.topNav {
+    width: calc(100vw - 248px);
+    background-color: black;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    position: fixed;
+    right: 0;
+}
+
+.fa-bars {
+    display: none;
+}
+
+.user-pop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.user-pop:hover {
+    background-color: aliceblue;
+}
+
+.user-pop p {
+    margin: 5px;
+}
+
+.mail-pop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.mail-pop img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.mail-pop p {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+.bell-pop hr {
+    margin: 10px 0px;
+}
+
+.mail-pop:hover {
+    background-color: aliceblue;
+}
+
+.bell-pop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 310px;
+}
+
+.bell-pop p {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+}
+
+.bell-pop:hover {
+    background-color: aliceblue;
+}
+
+.user-pop p {
+    padding: 5px;
+}
+
+.addPost {
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.child-topNav {
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.bells {
+    display: flex;
+    justify-content: space-between;
+    width: 75px;
+}
+
+@media (max-width : 1050px) {
+
+    .topNav {
+        width: 100vw;
+        padding: 20px 40px 20px 40px;
+        height: 70px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* padding: 20px; */
+        transition: transform 0.3s ease-in-out;
+        position: fixed;
+        right: 0;
+    }
+     .bells{
+        width: 65px;
+        margin-left: 10px;
+     }
+    .child-topNav {
+        width: 35%;
+    }
+
+    .fa-bars {
+        display: block;
+    }
+
+    .form-control {
+        display: none;
+    }
+
+    .bell {
+        font-size: 15px;
+        margin: 0px 5px;
+    }
+
+    .bell sup {
+        position: absolute;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .addPost {
+        width: 100px;
+    }
+}
+
+@media (max-width : 678px) {
+    .child-topNav {
+        width: 70%;
+    }
+    .topNav{
+        padding: 20px 30px 20px 20px;
+    }
+}
